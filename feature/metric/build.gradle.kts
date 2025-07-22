@@ -3,8 +3,9 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:cart"))
+    implementation(project(":core:post"))
     implementation(project(":core:profile"))
+    implementation(project(":core:contact"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

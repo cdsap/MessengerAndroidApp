@@ -4,6 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -22,7 +25,15 @@ class Viewmodel52_1 @Inject constructor(
     init {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val data = repository0.getData()
+                val data = coroutineScope {
+    val fetchers = listOf<suspend () -> String>(
+        { repository0.getData() }
+    )
+    val results = fetchers.map { fetch ->
+        async { fetch() }
+    }.awaitAll()
+    results.joinToString("")
+}
                 _state.emit(data)
             } catch (e: Exception) {
                 _state.emit("Error: " + e.message)

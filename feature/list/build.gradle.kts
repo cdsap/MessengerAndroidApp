@@ -3,11 +3,11 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:user"))
-    implementation(project(":core:search"))
-    implementation(project(":core:feed"))
-    implementation(project(":core:post"))
     implementation(project(":core:comment"))
+    implementation(project(":core:profile"))
+    implementation(project(":core:user"))
+    implementation(project(":core:cart"))
+    implementation(project(":core:login"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

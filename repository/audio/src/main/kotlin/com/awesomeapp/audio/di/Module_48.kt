@@ -12,37 +12,6 @@ import com.awesomeapp.audio.Fragment48_4
 import com.awesomeapp.audio.Repository48_5
 import com.awesomeapp.forecast.Api40_6
 import com.awesomeapp.audio.Api48_6
-import com.awesomeapp.audio.Usecase48_7
-import com.awesomeapp.audio.Model48_9
-import com.awesomeapp.audio.Model48_10
-import com.awesomeapp.audio.Activity48_11
-import com.awesomeapp.audio.Model48_13
-import com.awesomeapp.audio.Activity48_14
-import com.awesomeapp.audio.Model48_16
-import com.awesomeapp.audio.Activity48_17
-import com.awesomeapp.audio.Model48_19
-import com.awesomeapp.audio.Activity48_20
-import com.awesomeapp.audio.Model48_22
-import com.awesomeapp.audio.Activity48_23
-import com.awesomeapp.audio.Model48_25
-import com.awesomeapp.audio.Activity48_26
-import com.awesomeapp.audio.Model48_28
-import com.awesomeapp.audio.Activity48_29
-import com.awesomeapp.audio.Model48_31
-import com.awesomeapp.audio.Activity48_32
-import com.awesomeapp.audio.Model48_34
-import com.awesomeapp.audio.Activity48_35
-import com.awesomeapp.audio.Model48_37
-import com.awesomeapp.audio.Activity48_38
-import com.awesomeapp.audio.Model48_40
-import com.awesomeapp.audio.Activity48_41
-import com.awesomeapp.audio.Model48_43
-import com.awesomeapp.audio.Activity48_44
-import com.awesomeapp.audio.Model48_46
-import com.awesomeapp.audio.Activity48_47
-import com.awesomeapp.audio.Model48_49
-import com.awesomeapp.audio.Activity48_50
-import com.awesomeapp.audio.Model48_52
 
 @Module
 @InstallIn(SingletonComponent::class)

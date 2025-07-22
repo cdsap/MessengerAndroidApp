@@ -3,6 +3,11 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":repository:gallery"))
+    implementation(project(":repository:contact-contact"))
+    implementation(project(":repository:article"))
+    implementation(project(":repository:podcast"))
+    implementation(project(":repository:playlist"))
     implementation(project(":repository:media"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)

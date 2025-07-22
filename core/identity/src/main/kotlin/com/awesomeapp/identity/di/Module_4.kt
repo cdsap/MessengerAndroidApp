@@ -11,13 +11,6 @@ import com.awesomeapp.identity.Activity4_3
 import com.awesomeapp.identity.Fragment4_4
 import com.awesomeapp.identity.Repository4_5
 import com.awesomeapp.identity.Api4_6
-import com.awesomeapp.identity.Model4_8
-import com.awesomeapp.identity.Model4_9
-import com.awesomeapp.identity.Activity4_10
-import com.awesomeapp.identity.Model4_12
-import com.awesomeapp.identity.Activity4_13
-import com.awesomeapp.identity.Model4_15
-import com.awesomeapp.identity.Activity4_16
 
 @Module
 @InstallIn(SingletonComponent::class)

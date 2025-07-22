@@ -10,40 +10,9 @@ import com.awesomeapp.todo.Activity36_2
 import com.awesomeapp.todo.Activity36_3
 import com.awesomeapp.todo.Fragment36_4
 import com.awesomeapp.todo.Repository36_5
+import com.awesomeapp.profile.Api8_6
 import com.awesomeapp.search.Api12_6
 import com.awesomeapp.todo.Api36_6
-import com.awesomeapp.todo.Usecase36_7
-import com.awesomeapp.todo.Model36_9
-import com.awesomeapp.todo.Model36_10
-import com.awesomeapp.todo.Activity36_11
-import com.awesomeapp.todo.Model36_13
-import com.awesomeapp.todo.Activity36_14
-import com.awesomeapp.todo.Model36_16
-import com.awesomeapp.todo.Activity36_17
-import com.awesomeapp.todo.Model36_19
-import com.awesomeapp.todo.Activity36_20
-import com.awesomeapp.todo.Model36_22
-import com.awesomeapp.todo.Activity36_23
-import com.awesomeapp.todo.Model36_25
-import com.awesomeapp.todo.Activity36_26
-import com.awesomeapp.todo.Model36_28
-import com.awesomeapp.todo.Activity36_29
-import com.awesomeapp.todo.Model36_31
-import com.awesomeapp.todo.Activity36_32
-import com.awesomeapp.todo.Model36_34
-import com.awesomeapp.todo.Activity36_35
-import com.awesomeapp.todo.Model36_37
-import com.awesomeapp.todo.Activity36_38
-import com.awesomeapp.todo.Model36_40
-import com.awesomeapp.todo.Activity36_41
-import com.awesomeapp.todo.Model36_43
-import com.awesomeapp.todo.Activity36_44
-import com.awesomeapp.todo.Model36_46
-import com.awesomeapp.todo.Activity36_47
-import com.awesomeapp.todo.Model36_49
-import com.awesomeapp.todo.Activity36_50
-import com.awesomeapp.todo.Model36_52
-import com.awesomeapp.todo.Activity36_53
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -51,9 +20,11 @@ object Module_36 {
     @Provides
     @Singleton
     fun provideRepository36_5(
-        api0: Api12_6 = Api12_6()
+        api0: Api8_6 = Api8_6(),
+        api1: Api12_6 = Api12_6()
     ): Repository36_5 {
-        return Repository36_5(api0)
+        return Repository36_5(api0, 
+        api1)
     }
 
     @Provides

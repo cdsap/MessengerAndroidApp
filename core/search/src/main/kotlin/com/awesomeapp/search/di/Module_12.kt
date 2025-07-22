@@ -11,18 +11,6 @@ import com.awesomeapp.search.Activity12_3
 import com.awesomeapp.search.Fragment12_4
 import com.awesomeapp.search.Repository12_5
 import com.awesomeapp.search.Api12_6
-import com.awesomeapp.search.Usecase12_7
-import com.awesomeapp.search.Model12_9
-import com.awesomeapp.search.Model12_10
-import com.awesomeapp.search.Activity12_11
-import com.awesomeapp.search.Model12_13
-import com.awesomeapp.search.Activity12_14
-import com.awesomeapp.search.Model12_16
-import com.awesomeapp.search.Activity12_17
-import com.awesomeapp.search.Model12_19
-import com.awesomeapp.search.Activity12_20
-import com.awesomeapp.search.Model12_22
-import com.awesomeapp.search.Activity12_23
 
 @Module
 @InstallIn(SingletonComponent::class)

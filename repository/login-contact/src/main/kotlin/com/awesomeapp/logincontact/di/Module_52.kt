@@ -12,11 +12,6 @@ import com.awesomeapp.logincontact.Fragment52_4
 import com.awesomeapp.logincontact.Repository52_5
 import com.awesomeapp.forecast.Api40_6
 import com.awesomeapp.logincontact.Api52_6
-import com.awesomeapp.logincontact.Model52_8
-import com.awesomeapp.logincontact.Model52_9
-import com.awesomeapp.logincontact.Activity52_10
-import com.awesomeapp.logincontact.Model52_12
-import com.awesomeapp.logincontact.Activity52_13
 
 @Module
 @InstallIn(SingletonComponent::class)

@@ -3,13 +3,15 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core:push"))
-    implementation(project(":core:search"))
+    implementation(project(":core:profile"))
     implementation(project(":core:cart"))
+    implementation(project(":core:search"))
     implementation(project(":core:identity"))
-    implementation(project(":core:checkout"))
+    implementation(project(":core:comment"))
+    implementation(project(":core:post"))
+    implementation(project(":core:push"))
     implementation(project(":core:contact"))
-    implementation(project(":core:login"))
+    implementation(project(":core:user"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
